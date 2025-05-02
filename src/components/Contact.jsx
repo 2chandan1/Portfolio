@@ -91,7 +91,7 @@ const Contact = () => {
           {/* Social Icons */}
           <div className="mt-6 flex gap-4">
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/2chandan1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl text-gray-600 hover:text-black transition"
@@ -99,7 +99,7 @@ const Contact = () => {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://linkedin.com/in/your-username"
+              href=" http://linkedin.com/in/chandan-tiwari-"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl text-blue-600 hover:text-blue-800 transition"
