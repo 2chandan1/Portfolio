@@ -18,7 +18,7 @@ const projects = [
     ],
     Back_tech: ["PHP", "LARAVEL"],
     Database: ["MySQL"],
-    link: "https://inv-oport.com",
+    link: "https://invoport.com/",
   },
   {
     title: "Mango Semiconductors",
@@ -39,7 +39,7 @@ Pioneered the development of a comprehensive website`,
     ],
     Back_tech: ["PHP", "LARAVEL"],
     Database: ["MySQL"],
-    link: "https://yourcrm.com",
+    link: "https://www.mangofy.in/",
   },
   {
     title: "Rapisurv",
@@ -53,7 +53,7 @@ tender and bidding functionality. Worked on bug fixes and data uploading, ensuri
      "LARAVEL",
     ],
     Database: ["MySQL"],
-    link: "https://yourportfolio.com",
+    link: "https://www.rapisurv.com/",
   },
   {
     title: "PRIME BPM",
@@ -66,7 +66,7 @@ Optimized both code and APIs to ensure performance and scalability, adhering to 
         "LARAVEL",
     ],
     Database: ["SQL LITE"],
-    link: "https://yourportfolio.com",
+    link: "https://www.primebpm.com/",
   },
   {
     title: "RAH (Rimple and Harpreet)",
@@ -80,7 +80,7 @@ franchise management.`,
      "Liquid",
       "Shopify API",
     ],
-    link: "https://yourportfolio.com",
+    link: "https://www.rimpleandharpreet.com/",
   },
   {
     title: "McareExports",
@@ -93,7 +93,7 @@ franchise management.`,
        "Woocommerce", "wordpress",
     ],
     Database: ["MySQL"],
-    link: "https://yourportfolio.com",
+    link: "https://mcareexports.com/",
   },
 ];
 
