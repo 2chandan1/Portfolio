@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: dark --default, dark --prefersdark;
+}
+html {
+  scroll-behavior: smooth;
+}
+.custom-gradient {
+  background: #14205e;
+  background: radial-gradient(circle, rgba(20, 32, 94, 1) 0%, rgba(87, 20, 33, 1) 100%);
+  min-height: 100vh;
+  color: white;
+}
