@@ -99,7 +99,7 @@ const Contact = () => {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href=" http://linkedin.com/in/chandan-tiwari-"
+              href="https://www.linkedin.com/in/chandan-tiwari9905"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl text-blue-600 hover:text-blue-800 transition"
