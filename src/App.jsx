@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="pt-20 space-y-32 ">
+      <main className="pt-16 space-y-32 ">
         <section id="home"><Hero /></section>
         <section id="about" className="scroll-mt-24"><About /></section>
         <section id="skills" className="scroll-mt-24"><Skills /></section>
