@@ -1,211 +1,227 @@
-import React from "react";
+import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 
-const projects = [
-  {
-    title: "INVOPORT",
-    description: `Developed an e-commerce website using core PHP with extensive API integrations including DocuSign,
-          Microsoft Online, Open Bank, and Google Cloud Document AI. Handled both front-end and back-end
-          development, ensuring smooth user experiences.`,
-    Front_tech: [
-      "PHP",
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "JavaScript",
-      "jQuery",
-      "Ajax",
-      "Vue js",
-    ],
-    Back_tech: ["PHP", "LARAVEL"],
-    Database: ["MySQL"],
-    link: "https://invoport.com/",
-  },
-  {
-    title: "Mango Semiconductors",
-    description: `Developed a full-stack e-commerce platform using Laravel, handling both front-end and back-end.
-Integrated PayPal, Stripe, Razorpay, and 6 e-commerce APIs for seamless payment and order
-processing. Implemented user login, registration, and account management features.
-Pioneered the development of a comprehensive website`,
-    Front_tech: [
-      "PHP",
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "JavaScript",
-      "jQuery",
-      "Ajax",
-      "Vue js",
-    ],
-    Back_tech: ["PHP", "LARAVEL"],
-    Database: ["MySQL"],
-    link: "https://www.mangofy.in/",
-  },
-  {
-    title: "Rapisurv",
-    description: `Developed the back-end of a Laravel-based e-commerce platform for construction services, focusing on
-tender and bidding functionality. Worked on bug fixes and data uploading, ensuring smooth operations.
-● Created APIs (CRUD) for managing tenders, bidders, and invitations.`,
-    Front_tech: [],
-    Back_tech: ["PHP", "LARAVEL"],
-    Database: ["MySQL"],
-    link: "https://www.rapisurv.com/",
-  },
-  {
-    title: "PRIME BPM",
-    description: `Worked as a Laravel backend developer, focusing on API integration and creation for the website.
-Optimized both code and APIs to ensure performance and scalability, adhering to industry standards.`,
-    Front_tech: [],
-    Back_tech: ["PHP", "LARAVEL"],
-    Database: ["SQL LITE"],
-    link: "https://www.primebpm.com/",
-  },
-  {
+// === PROJECT DATA ===
+const currentCompanyProjects = [
+{
+  title: "Bakuun – Product-Based Travel Tech Platform",
+    description: `At Bakuun, I work as a Full Stack Developer on the Marketplace, B-Aggregate , B-Integrate and Admin Panel. 
+I build and optimize features for the unified travel distribution platform that connects hotels and travel providers globally. 
+My contributions include integrating scalable APIs, automating booking flows, and enhancing the Extranet dashboard with secure, real-time data management.`,
+    Front_tech: ["Vue.js", "React.js", "Tailwind CSS"],
+    Back_tech: ["Laravel", "Node.js"],
+    Database: ["MongoDB", "MySQL"],
+    link: "https://bakuun.com/",
+}
+];
+
+const previousCompanyProjects = [
+    {
     title: "NGO - Internal Displacement Monitoring Centre",
-    description: `This project aims to revamp and optimize IDMC organization's online presence. Improved page load speed by 35% by implementing code-splitting and lazy loading in React, leading to a 20% increase.`,
-    Front_tech: ["React.js", "GatsbyJS", "Typescript", "Drupal CMS"],
-    Back_tech: ["Node js"],
+    description: `Revamped IDMC’s web platform using React and GatsbyJS. Improved page load speed by 35% and SEO performance by 20%.`,
+    Front_tech: ["React.js", "GatsbyJS", "TypeScript", "Drupal CMS"],
+    Back_tech: ["Node.js"],
     Database: ["GraphQL"],
     link: "https://www.internal-displacement.org/",
   },
   {
     title: "Global Hiring - Safeguard Global",
-    description: `Created reusable templates within Gatsby to improve development speed and maintainability, reducing the time needed
-for future updates by 30%.Increased organic traffic by 40% by adhering to SEO best practices and integrating Google Analytics and GTM todrive insights for content optimization.`,
-    Front_tech: ["React.js", "GatsbyJS", "Typescript"],
-    Back_tech: ["Node js"],
+    description: `Built reusable Gatsby templates and improved SEO, increasing organic traffic by 40%. Integrated GTM and Google Analytics for data insights.`,
+    Front_tech: ["React.js", "GatsbyJS", "TypeScript"],
+    Back_tech: ["Node.js"],
     Database: ["GraphQL"],
     link: "https://safeguardglobal.com/",
   },
   {
-    title: "HRMS - Human Resource Management System",
-    description: `Designed and implemented the Finance module, enabling seamless management of financial data, including salary
-processing, tax calculations, and reimbursements.Integrated dynamic salary breakdown, tax calculations, and reimbursement tracking, enhancing financial transparency
-for employees.
-`,
-    Front_tech: ["React.js", "Next.js", "GatsbyJS", "Typescript"],
-    Back_tech: ["Node js"],
-    Database: ["GraphQL"],
-    link: " ",
+    title: "INVOPORT",
+    description: `Developed a PHP-based e-commerce website with integrations including DocuSign, Microsoft Online, Open Bank, and Google Cloud Document AI.`,
+    Front_tech: [
+      "PHP",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "JavaScript",
+      "jQuery",
+      "Vue.js",
+    ],
+    Back_tech: ["PHP", "Laravel"],
+    Database: ["MySQL"],
+    link: "https://invoport.com/",
+  },
+  {
+    title: "Mango Semiconductors",
+    description: `Developed a full-stack e-commerce platform using Laravel. Integrated multiple payment gateways (PayPal, Stripe, Razorpay) and optimized backend APIs.`,
+    Front_tech: ["Vue.js", "Bootstrap", "JavaScript"],
+    Back_tech: ["Laravel"],
+    Database: ["MySQL"],
+    link: "https://www.mangofy.in/",
+  },
+  {
+    title: "Rapisurv",
+    description: `Built backend services for a Laravel-based construction bidding platform. Focused on tender management APIs and data automation.`,
+    Back_tech: ["Laravel"],
+    Database: ["MySQL"],
+    link: "https://www.rapisurv.com/",
   },
   {
     title: "RAH (Rimple and Harpreet)",
-    description: `Developed an e-commerce fashion website using Shopify, focusing on user login, authentication, and live sales functionality. Implemented features for appointment booking and CSV file import for
-franchise management.`,
-    Front_tech: ["HTML", "CSS", "Javascript", "Shopify", "Bootstrap"],
-    Back_tech: ["PHP", "Shopify", "Liquid", "Shopify API"],
+    description: `Developed a high-end fashion e-commerce site on Shopify with authentication, live sales, and franchise management via CSV imports.`,
+    Front_tech: ["HTML", "CSS", "Shopify", "Bootstrap"],
+    Back_tech: ["Liquid", "Shopify API"],
     link: "https://www.rimpleandharpreet.com/",
   },
   {
+    title: "HRMS - Human Resource Management System",
+    description: `Designed and implemented the Finance module with salary management, tax calculations, and reimbursement tracking. Built using React and Node.`,
+    Front_tech: ["React.js", "Next.js", "GatsbyJS", "TypeScript"],
+    Back_tech: ["Node.js"],
+    Database: ["GraphQL"],
+    link: "",
+  },
+  {
     title: "McareExports",
-    description: `Worked on a WordPress-based pharmaceutical website, focusing on bug fixes and adding new features
-        to enhance functionality.`,
-    Front_tech: [
-      "PHP",
-      "WordPress",
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Shopify",
-      "Bootstrap",
-    ],
-    Back_tech: ["PHP", "Woocommerce", "wordpress"],
+    description: `Enhanced a WordPress-based pharmaceutical website with new features and bug fixes to improve overall functionality.`,
+    Front_tech: ["PHP", "WordPress", "Bootstrap"],
+    Back_tech: ["WooCommerce"],
     Database: ["MySQL"],
     link: "https://mcareexports.com/",
   },
 ];
 
+const personalProjects = [
+  
+];
+
+// === PROJECT CARD COMPONENT ===
+const ProjectCard = ({ project, index }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    whileHover={{ scale: 1.03 }}
+    transition={{ duration: 0.5, delay: index * 0.05 }}
+    className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg hover:shadow-2xl transition-all duration-300"
+  >
+    <div className="p-6 flex flex-col h-full">
+      {/* Header */}
+      <div className="flex justify-between items-start mb-3">
+        <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors duration-300">
+          {project.title}
+        </h3>
+        {project.link && (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+            className="text-accent hover:text-primary transition-colors"
+          >
+            <ExternalLink size={20} />
+          </a>
+        )}
+      </div>
+
+      {/* Description */}
+      <p className="text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
+        {project.description}
+      </p>
+
+      {/* Tech */}
+      {project.Front_tech?.length > 0 && (
+        <div className="mb-2">
+          <h4 className="text-xs uppercase text-gray-400 mb-2 font-medium">
+            Frontend
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {project.Front_tech.map((tech, i) => (
+              <span
+                key={i}
+                className="px-3 py-1 text-xs rounded-full bg-primary/10 border border-primary/20 text-primary"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {project.Back_tech?.length > 0 && (
+        <div className="mb-2">
+          <h4 className="text-xs uppercase text-gray-400 mb-2 font-medium">
+            Backend
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {project.Back_tech.map((tech, i) => (
+              <span
+                key={i}
+                className="px-3 py-1 text-xs rounded-full bg-accent/10 border border-accent/20 text-accent"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {project.Database?.length > 0 && (
+        <div>
+          <h4 className="text-xs uppercase text-gray-400 mb-2 font-medium">
+            Database
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {project.Database.map((db, i) => (
+              <span
+                key={i}
+                className="px-3 py-1 text-xs rounded-full bg-info/10 border border-info/20 text-info"
+              >
+                {db}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </motion.div>
+);
+
+// === MAIN SECTION ===
 const Projects = () => {
   return (
-    <div className="px-6" data-aos="fade-up">
-      <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
-      <div className="grid md:grid-cols-4 gap-4">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="card bg-base-200 shadow-md hover:shadow-xl transition duration-300 "
-            data-aos="zoom-in"
-            data-aos-delay={index * 50}
-          >
-            <div className="card-body space-y-4">
-              <h3 className="card-title text-2xl font-semibold text-white">
-                {project.title}
-              </h3>
+    <div className="bg-gradient-to-b from-base-200 via-base-100 to-base-200 py-20 px-6">
+      <div className="max-w-6xl mx-auto">
+        {/* Title */}
+        <h2 className="text-3xl font-bold text-center mb-14 text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+          Projects & Work Experience
+        </h2>
 
-              <p className="text-gray-300 leading-relaxed">
-                {project.description}
-              </p>
+        {/* 1️⃣ Current Company */}
+        <Section title="Bakuun" projects={currentCompanyProjects} />
 
-              {project.Front_tech?.length > 0 && (
-                <div>
-                  <h4 className="font-medium text-sm text-gray-400 mb-3">
-                    Front-end Technologies:
-                  </h4>
+        {/* 2️⃣ Previous Company */}
+        <Section
+          title="Cloud Analogy"
+          projects={previousCompanyProjects}
+        />
 
-                  <div className="flex flex-wrap gap-2">
-                    {project.Front_tech.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="badge badge-warning badge-outline text-sm px-3 py-1"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {project.Back_tech?.length > 0 && (
-                <div>
-                  <h4 className="font-medium text-sm text-gray-400 mb-3">
-                    Back-end Technologies:
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.Back_tech.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="badge badge-secondary badge-outline text-sm px-3 py-1 "
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-              {project.Database?.length > 0 && (
-                <div>
-                  <h4 className="font-medium text-sm text-gray-400 mb-1">
-                    Database:
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.Database.map((db, i) => (
-                      <span
-                        key={i}
-                        className="badge badge-info badge-outline text-sm px-3 py-1"
-                      >
-                        {db}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-              {project.link?.trim() && (
-                <div className="card-actions justify-end mt-6">
-                  <a
-                    href={project.link ?? "#"}
-                    className="btn btn-sm btn-primary rounded-full px-6"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    View Project
-                  </a>
-                </div>
-              )}
-            </div>
-          </div>
-        ))}
+        {/* 3️⃣ Personal Projects */}
+        {/* <Section title="Personal & Freelance Projects" projects={personalProjects} /> */}
       </div>
     </div>
   );
 };
+
+// === SUB SECTION COMPONENT ===
+const Section = ({ title, projects }) => (
+  <div className="mb-16">
+    <h3 className="text-3xl font-semibold mb-8 text-white">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">
+        {title}
+      </span>
+    </h3>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.map((project, i) => (
+        <ProjectCard key={i} project={project} index={i} />
+      ))}
+    </div>
+  </div>
+);
 
 export default Projects;

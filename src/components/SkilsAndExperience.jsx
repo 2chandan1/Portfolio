@@ -35,7 +35,7 @@ const experiences = [
     company: "Cloud Analogy",
     duration: "Jan 2022 – Jun 2025",
     details: [
-      "Built full-stack apps using Laravel and React.js.",
+      "Built full-stack apps using Laravel and React.js, Next.js, Shopify, Wordpress.",
       "Integrated APIs like DocuSign, Stripe, Revolut, etc.",
       "Developed scalable Shopify customizations and themes.",
     ],
