@@ -50,7 +50,7 @@ const About = () => {
           reliable platforms, integrate third-party APIs, and deliver fast, responsive
           user experiences.
         </p>
-      <p className="text-center text-gray-400">
+      <p className="text-center text-gray-400 mb-6">
         React • Next.js • Vue.js • Node.js • Laravel • MongoDB • MySQL
       </p>
         {/* Experience Section */}
