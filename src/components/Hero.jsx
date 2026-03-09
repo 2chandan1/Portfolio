@@ -39,9 +39,8 @@ function Hero() {
               </span>
             </h1>
             <p className="py-3">
-              I'm a Full-Stack Web Developer with 3+ years of experience in
-              React, Next, Vue, Laravel, MySQL, MongoDB.
-              <br /> I build fast, responsive, and user-friendly websites.
+              Full-Stack Web Developer with 4+ years of experience developing scalable SaaS and B2B platforms using React, Next.js, Vue.js, Laravel, and Node.js.
+              <br /> Experienced in API integrations, payment systems, and building fast, responsive web applications.
             </p>
 
             <a href="/Resume.pdf" download>

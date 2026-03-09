@@ -1,4 +1,3 @@
-import React from "react";
 
 const experiences = [
   {
@@ -45,12 +44,15 @@ const About = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          I’m a passionate <strong>Full Stack Developer</strong> with expertise in
-          modern web technologies, dedicated to building efficient, scalable, and
-          user-friendly applications. I combine technical precision with creative
-          problem-solving to deliver impactful digital solutions.
+          I’m a <strong>Full Stack Developer</strong> with 4+ years of experience building
+          scalable and high-performance web applications. I work with modern technologies
+          like React, Next.js, Vue.js, Laravel, Node.js, MongoDB, and MySQL to develop
+          reliable platforms, integrate third-party APIs, and deliver fast, responsive
+          user experiences.
         </p>
-
+      <p className="text-center text-gray-400">
+        React • Next.js • Vue.js • Node.js • Laravel • MongoDB • MySQL
+      </p>
         {/* Experience Section */}
         <div className="space-y-6 mb-12">
           {experiences.map((exp, i) => (
