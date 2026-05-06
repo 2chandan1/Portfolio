@@ -7,7 +7,7 @@ function Hero() {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div data-aos="fade-up-left">
             <img
-              src="photo.jpg.jpg"
+              src="profile1.png"
               className="max-w-sm rounded-lg shadow-2xl"
             />
           </div>
